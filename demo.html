@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serena Pet Store - Banho e Tosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --serena-beige: #F5F1E9;  /* Fundo do anúncio */
+            --serena-teal: #6CB4A1;   /* Laço da logo e detalhes */
+            --serena-black: #1A1A1A;  /* Texto e rodapé */
+            --whatsapp-green: #25D366;
+            --white: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--serena-beige); color: var(--serena-black); line-height: 1.6; }
+
+        /* Header com Logo */
+        header { 
+            background: var(--white); 
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+        }
+        
+        .logo-container { display: flex; align-items: center; gap: 10px; }
+        .logo-img { height: 50px; width: auto; } /* Ajuste de tamanho para o header */
+        .logo-text { font-size: 1.1rem; font-weight: bold; color: var(--serena-black); }
+        .logo-text span { color: var(--serena-teal); }
+
+        .btn-header { 
+            background: var(--whatsapp-green); 
+            color: var(--white); 
+            padding: 10px 18px; 
+            border-radius: 25px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Hero Section */
+        .hero { background: var(--serena-black); color: var(--white); padding: 60px 20px; text-align: center; }
+        .hero h2 { font-size: 2rem; margin-bottom: 15px; }
+        .hero p { color: var(--serena-beige); opacity: 0.9; margin-bottom: 30px; font-size: 1rem; }
+
+        /* Serviços */
+        .services { padding: 40px 20px; display: grid; gap: 20px; }
+        .card { background: var(--white); padding: 25px; border-radius: 15px; text-align: center; }
+        .card i { color: var(--serena-teal); font-size: 1.8rem; margin-bottom: 12px; }
+
+        /* Footer */
+        footer { background: var(--serena-black); color: var(--serena-beige); padding: 40px 20px; text-align: center; }
+        .btn-footer { 
+            background: var(--whatsapp-green); 
+            color: var(--white); 
+            padding: 15px 30px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .services { grid-template-columns: repeat(3, 1fr); max-width: 1000px; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo-serena.png" alt="Serena Pet Store Logo" class="logo-img"> 
+            <div class="logo-text">Serena <span>Pet Store</span></div>
+        </div>
+        <a href="https://wa.me/551530193447" class="btn-header">
+            <i class="fab fa-whatsapp"></i> Agendar
+        </a>
+    </header>
+
+    <section class="hero">
+        <h2>O cuidado premium que seu pet merece.</h2>
+        <p>Banho, Tosa e Consultório Veterinário no Éden com confiança e carinho.</p>
+        <div style="background: rgba(255,255,255,0.1); display: inline-block; padding: 10px 20px; border-radius: 10px;">
+            <span style="color: var(--serena-teal); font-weight: bold; font-size: 1.4rem;">4.8</span>
+            <p style="font-size: 0.7rem; margin: 0;">Nota no Google</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <i class="fas fa-shower"></i>
+            <h3>Higiene Impecável</h3>
+            <p>Espaço limpo e visível para sua tranquilidade.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-truck"></i>
+            <h3>Leva e Traz</h3>
+            <p>Buscamos e entregamos seu melhor amigo com segurança.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-paw"></i>
+            <h3>Consultório</h3>
+            <p>Atendimento especializado para a saúde do seu pet.</p>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Serena Pet Store</h4>
+        <p style="font-size: 0.8rem; margin: 10px 0;">Rua João Mustafá, 446 - Éden, Sorocaba</p>
+        <p style="font-size: 0.8rem;">Terça a Sábado: 08h às 19h</p>
+        <a href="https://wa.me/551530193447" class="btn-footer">Chamar no WhatsApp</a>
+    </footer>
+
+</body>
+</html>
